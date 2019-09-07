@@ -44,6 +44,7 @@ function Listen(request,response)
 				}
 
 				fs.createReadStream(filePath).pipe(res); //send bytes of requested file in responce
+				res.end();
 				
 			});
 		}
